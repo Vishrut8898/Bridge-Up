@@ -13,7 +13,7 @@ const DoneForm = ({ showForm, setShowForm }) => {
             description: description
         }
 
-        axios.post('/done', doneData)
+        axios.post('http://localhost:5055/done', doneData)
             .then(() => {
                 alert('Done Added')
             })

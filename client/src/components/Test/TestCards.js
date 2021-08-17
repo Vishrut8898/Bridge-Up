@@ -10,13 +10,13 @@ const TestCards = ({ card }) => {
             description: card.description
         }
 
-        axios.post('/proceedTest', proceedData)
-        axios.delete('/deleteTest/' + myId)
+        axios.post('http://localhost:5055/proceedTest', proceedData)
+        axios.delete('http://localhost:5055/deleteTest/' + myId)
         alert('Test Proceeded To Done')
     }
 
     const deleteCard = (myId) => {
-        axios.delete('/deleteTest/' + myId)
+        axios.delete('http://localhost:5055/deleteTest/' + myId)
         alert('Test Deleted')
     }
 

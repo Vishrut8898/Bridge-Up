@@ -18,7 +18,7 @@ const TodoForm = ({ showForm, setShowForm }) => {
             description: description
         }
 
-        axios.post('/todos', todoData)
+        axios.post('http://localhost:5055/todos', todoData)
             .then(() => {
                 alert('Todo Added')
             })

@@ -14,7 +14,7 @@ const TestForm = ({ showForm, setShowForm }) => {
             description: description
         }
 
-        axios.post('/testing', testData)
+        axios.post('http://localhost:5055/testing', testData)
             .then(() => {
                 alert('Test Added')
             })

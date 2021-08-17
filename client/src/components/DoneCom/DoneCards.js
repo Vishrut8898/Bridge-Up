@@ -4,7 +4,7 @@ import axios from 'axios'
 const DoneCards = ({ card }) => {
 
     const deleteCard = (myId) => {
-        axios.delete('/deleteDone/' + myId)
+        axios.delete('http://localhost:5055/deleteDone/' + myId)
         alert('Done Deleted')
     }
 

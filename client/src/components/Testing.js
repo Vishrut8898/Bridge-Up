@@ -7,7 +7,7 @@ const Testing = () => {
     const [cards, setCards] = useState([{}])
 
     useEffect(() => {
-        fetch('/testing').then(res => {
+        fetch('http://localhost:5055/testing').then(res => {
             if (res.ok) {
                 return res.json()
             }

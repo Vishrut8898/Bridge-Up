@@ -8,7 +8,7 @@ const Todo = () => {
     const [tasks, setTasks] = useState([])
 
     useEffect(() => {
-        fetch('/todos/').then(res => {
+        fetch('http://localhost:5055/todos/').then(res => {
             if (res.ok) {
                 return res.json()
             }

@@ -14,7 +14,7 @@ const DevForm = ({ showForm, setShowForm }) => {
             description: description
         }
 
-        axios.post('/development', newData)
+        axios.post('http://localhost:5055/development', newData)
             .then(() => alert('Dev Added'))
             .catch((err) => console.log(err))
 

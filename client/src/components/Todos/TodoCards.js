@@ -29,13 +29,13 @@ const TodoCards = ({ task }) => {
             description: task.description
         }
 
-        axios.post('/proceedTodo', proceedData)
-        axios.delete('/deleteTodo/' + myId)
+        axios.post('http://localhost:5055/proceedTodo', proceedData)
+        axios.delete('http://localhost:5055/deleteTodo/' + myId)
         alert('Todo Proceeded To Development')
     }
 
     const deleteCard = (myId) => {
-        axios.delete('/deleteTodo/' + myId)
+        axios.delete('http://localhost:5055/deleteTodo/' + myId)
         alert('Todo Deleted')
     }
 

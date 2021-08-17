@@ -7,7 +7,7 @@ const Development = () => {
     const [cards, setCards] = useState([])
 
     useEffect(() => {
-        fetch('/development').then((res) => {
+        fetch('http://localhost:5055/development').then((res) => {
             if (res.ok) {
                 return res.json()
             }

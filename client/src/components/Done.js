@@ -7,7 +7,7 @@ const Done = () => {
     const [cards, setCards] = useState([])
 
     useEffect(() => {
-        fetch('/done').then(res => {
+        fetch('http://localhost:5055/done').then(res => {
             if (res.ok) {
                 return res.json()
             }
